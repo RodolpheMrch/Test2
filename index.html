@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'acceuil | Garage V.Parrot</title>
+    <link rel="stylesheet" href="design/style.css">
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+
+</head>
+<body>
+
+    <!--HEADER-->
+    <header class="header" data-header>
+        <div class="container">
+
+            <div class="overlay" data-overlay></div>
+
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.svg" alt="">
+                </a>
+
+                <nav class="navbar" data-navbar>
+                    <ul class="navbar-list">
+
+                        <li>
+                            <a href="#home" class="navbar-link" data-nav-link>Acceuil</a>
+                        </li>
+
+                        <li>
+                            <a href="#featured-car" class="navbar-link" data-nav-link>Voitures d'occasion</a>
+                        </li>
+
+                        <li>
+                            <a href="#blog" class="navbar-link" data-nav-link>Entretenir son véhicule</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="navbar-link" data-nav-link>Qui sommes nous ?</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+
+                    <div class="header-contact">
+                        <a href="tel:0633864935" class="contact-link">06 33 86 49 35</a>
+
+                        <span class="contact-time">Lundi - Vendredi: 9:00 - 18:00 </span>
+                    </div>
+
+                    <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
+                        <ion-icon name="car-outline"></ion-icon>
+
+                        <span id="aria-label-txt">Explore cars</span>
+                    </a>
+
+                    <a href="#" class="btn user-btn" aria-label="Profile">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a>
+                    
+                    <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                        <span class="three"></span>
+                    </button>
+                </div>
+
+        </div>
+    </header>
+
+    <main>
+
+            <!--HERO-->
+            <section class="section hero" id="home">
+                <div class="container">
+
+                    <div class="hero-content">
+                        <h2 class="h1 hero-title">La manière la plus simple de reprendre le contrôle</h2>
+
+                        <p class="hero-text">Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="hero-banner"></div>
+                    
+                    <form action="" class="hero-form">
+
+                        <div class="input-wrapper">
+                            <label for="input-1" class="input-label">Modèle ou marque</label>
+
+                            <input type="text" name="car-model" id="input-1" class="input-field" placeholder="Quelle voiture recherchez-vous ?">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="input-1" class="input-label">Budget</label>
+
+                            <input type="text" name="car-model" id="input-1" class="input-field" placeholder="Ajouter un montant en €">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="input-1" class="input-label">Année de fabrication</label>
+
+                            <input type="text" name="car-model" id="input-1" class="input-field" placeholder="Ajouter une année de fabrication">
+                        </div>
+
+                        <button type="submit" class="btn">Rechercher</button>
+
+                    </form>
+
+                </div>
+            </section>
+
+            <!--FEATURED CAR-->
+            <section class="section featured-car" id="featured-car">
+                <div class="container">
+
+                    <div class="title-wrapper">
+                        <h2 class="h2 section-title">Occasions</h2>
+
+                        <a href="#" class="featured-car-link">
+                            <span>Voir toutes les voitures</span>
+
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+
+                    <ul class="featured-car-list">
+
+                        <li>
+                            <div class="featured-car-card">
+
+                                <figure class="card-banner">
+                                    <img src="./assets/images/car-1.jpg" alt="Totoya RAV4" loading="lazy" width="440" height="300" class="w-100">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-title-wrapper">
+                                        <h3 class="h3 card-title">
+                                            <a href="#">Totoya RAV4</a>
+                                        </h3>
+
+                                        <data class="year" value="2021">2021</data>
+                                    </div>
+
+                                    <ul class="card-list">
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="people-outline"></ion-icon>
+
+                                            <span class="card-item-text">4 Places</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="flash-outline"></ion-icon>
+
+                                            <span class="card-item-text">Hybrid</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="speedometer-outline"></ion-icon>
+
+                                            <span class="card-item-text">6.1km / 1-litre</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                                            <span class="card-item-text">Automatic</span>
+                                        </li>
+
+                                    </ul>
+
+                                    <div class="card-price-wrapper">
+
+                                        <p class="card-price">
+                                            <strong>64,859€</strong>
+                                        </p>
+
+                                        <button class="btn fav-btn" aria-label="Ajouter en favoris">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn">Prendre rendez-vous</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="featured-car-card">
+
+                                <figure class="card-banner">
+                                    <img src="./assets/images/car-2.jpg" alt="BMW 3 Series 2019" loading="lazy" width="440" height="300" class="w-100">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-title-wrapper">
+                                        <h3 class="h3 card-title">
+                                            <a href="#">BMW Series 3</a>
+                                        </h3>
+
+                                        <data class="year" value="2021">2019</data>
+                                    </div>
+
+                                    <ul class="card-list">
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="people-outline"></ion-icon>
+
+                                            <span class="card-item-text">4 Places</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="flash-outline"></ion-icon>
+
+                                            <span class="card-item-text">Gasoline</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="speedometer-outline"></ion-icon>
+
+                                            <span class="card-item-text">8.2km / 1-litre</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                                            <span class="card-item-text">Automatic</span>
+                                        </li>
+
+                                    </ul>
+
+                                    <div class="card-price-wrapper">
+
+                                        <p class="card-price">
+                                            <strong>79,658€</strong>
+                                        </p>
+
+                                        <button class="btn fav-btn" aria-label="Ajouter en favoris">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn">Prendre rendez-vous</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="featured-car-card">
+
+                                <figure class="card-banner">
+                                    <img src="./assets/images/car-3.jpg" alt="Volkswagen T-Cross 2020" loading="lazy" width="440" height="300" class="w-100">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-title-wrapper">
+                                        <h3 class="h3 card-title">
+                                            <a href="#">Volkswagen T-Cross</a>
+                                        </h3>
+
+                                        <data class="year" value="2021">2020</data>
+                                    </div>
+
+                                    <ul class="card-list">
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="people-outline"></ion-icon>
+
+                                            <span class="card-item-text">4 Places</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="flash-outline"></ion-icon>
+
+                                            <span class="card-item-text">Gasoline</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="speedometer-outline"></ion-icon>
+
+                                            <span class="card-item-text">5.3km / 1-litre</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                                            <span class="card-item-text">Automatic</span>
+                                        </li>
+
+                                    </ul>
+
+                                    <div class="card-price-wrapper">
+
+                                        <p class="card-price">
+                                            <strong>39,530€</strong>
+                                        </p>
+
+                                        <button class="btn fav-btn" aria-label="Ajouter en favoris">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn">Prendre rendez-vous</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="featured-car-card">
+
+                                <figure class="card-banner">
+                                    <img src="./assets/images/car-4.jpg" alt="Cadillac Escalade 2020" loading="lazy" width="440" height="300" class="w-100">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-title-wrapper">
+                                        <h3 class="h3 card-title">
+                                            <a href="#">Cadillac Escalade</a>
+                                        </h3>
+
+                                        <data class="year" value="2021">2020</data>
+                                    </div>
+
+                                    <ul class="card-list">
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="people-outline"></ion-icon>
+
+                                            <span class="card-item-text">4 Places</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="flash-outline"></ion-icon>
+
+                                            <span class="card-item-text">Gasoline</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="speedometer-outline"></ion-icon>
+
+                                            <span class="card-item-text">7.7km / 1-litre</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                                            <span class="card-item-text">Automatic</span>
+                                        </li>
+
+                                    </ul>
+
+                                    <div class="card-price-wrapper">
+
+                                        <p class="card-price">
+                                            <strong>48,689€</strong>
+                                        </p>
+
+                                        <button class="btn fav-btn" aria-label="Ajouter en favoris">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn">Prendre rendez-vous</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="featured-car-card">
+
+                                <figure class="card-banner">
+                                    <img src="./assets/images/car-5.jpg" alt="BMW Series 4 GTI 2021" loading="lazy" width="440" height="300" class="w-100">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-title-wrapper">
+                                        <h3 class="h3 card-title">
+                                            <a href="#">BMW Series 4 GTI</a>
+                                        </h3>
+
+                                        <data class="year" value="2021">2021</data>
+                                    </div>
+
+                                    <ul class="card-list">
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="people-outline"></ion-icon>
+
+                                            <span class="card-item-text">4 Places</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="flash-outline"></ion-icon>
+
+                                            <span class="card-item-text">Gasoline</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="speedometer-outline"></ion-icon>
+
+                                            <span class="card-item-text">7.6km / 1-litre</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                                            <span class="card-item-text">Automatic</span>
+                                        </li>
+
+                                    </ul>
+
+                                    <div class="card-price-wrapper">
+
+                                        <p class="card-price">
+                                            <strong>88,985€</strong>
+                                        </p>
+
+                                        <button class="btn fav-btn" aria-label="Ajouter en favoris">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn">Prendre rendez-vous</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="featured-car-card">
+
+                                <figure class="card-banner">
+                                    <img src="./assets/images/car-6.jpg" alt="BMW Series 4 2019" loading="lazy" width="440" height="300" class="w-100">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-title-wrapper">
+                                        <h3 class="h3 card-title">
+                                            <a href="#">BMW Series 4</a>
+                                        </h3>
+
+                                        <data class="year" value="2021">2019</data>
+                                    </div>
+
+                                    <ul class="card-list">
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="people-outline"></ion-icon>
+
+                                            <span class="card-item-text">4 Places</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="flash-outline"></ion-icon>
+
+                                            <span class="card-item-text">Gasoline</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="speedometer-outline"></ion-icon>
+
+                                            <span class="card-item-text">6.2km / 1-litre</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                                            <span class="card-item-text">Automatic</span>
+                                        </li>
+
+                                    </ul>
+
+                                    <div class="card-price-wrapper">
+
+                                        <p class="card-price">
+                                            <strong>66,550€</strong>
+                                        </p>
+
+                                        <button class="btn fav-btn" aria-label="Ajouter en favoris">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn">Prendre rendez-vous</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+            <!--#GET START-->
+            <section class="section get-start">
+                <div class="container">
+
+                    <h2 class="h2 section-title">
+                        Acheter en 4 étapes faciles
+                    </h2>
+
+                    <ul class="get-start-list">
+
+                        <li>
+                            <div class="get-start-card">
+
+                                <div class="card-icon icon-1">
+                                    <ion-icon name="person-add-outline"></ion-icon>
+                                </div>
+
+                                <h3 class="card-title">Remplissez le formulaire</h3>
+
+                                <p class="card-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, similique.
+                                </p>
+
+                                <a href="#" class="card-link">Get started</a>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="get-start-card">
+
+                                <div class="card-icon icon-2">
+                                    <ion-icon name="car-outline"></ion-icon>
+                                </div>
+
+                                <h3 class="card-title">Spécifier le modèle de la voiture</h3>
+
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore!
+                                </p>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="get-start-card">
+
+                                <div class="card-icon icon-3">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                </div>
+
+                                <h3 class="card-title">Nous faisons la correspondance avec le vendeur</h3>
+
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+
+                            </div>
+                        </li> 
+
+                        <li>
+                            <div class="get-start-card">
+
+                                <div class="card-icon icon-4">
+                                    <ion-icon name="card-outline"></ion-icon>
+                                </div>
+
+                                <h3 class="card-title">Nous vous accompagnons jusqu'a la conclusion de la vente</h3>
+
+                                <p class="card-text">
+                                    There are many variations of passages of Lorem available, but the majority have suffered alteration
+                                </p>
+
+                            </div>
+                        </li> 
+
+                    </ul>
+
+                </div>
+            </section>
+
+            <!--#BLOG-->
+            <section class="section blog" id="blog">
+                <div class="container">
+
+                    <h2 class="h2 section-title">Notre blog</h2>
+
+                    <ul class="blog-list has-scrollbar">
+
+                        <li>
+                            <div class="blog-card">
+
+                                <figure class="card-banner">
+
+                                    <a href="#">
+                                        <img src="assets/images/blog-1.jpg" alt="opening of new offices of the company" loading="lazy" class="w-100">
+                                    </a>
+
+                                    <a href="#" class="btn card-badge">Company</a>
+
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Opening of new offices of the company</a>
+                                    </h3>
+
+                                    <div class="card-meta">
+
+                                        <div class="publish-date">
+                                            <ion-icon name="time-outline"></ion-icon>
+
+                                            <time datetime="17-01-2022">17 Janvier, 2022</time>
+                                        </div>
+
+                                        <div class="comments">
+                                            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                                            <data value="114">114</data>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="blog-card">
+
+                                <figure class="card-banner">
+
+                                    <a href="#">
+                                        <img src="assets/images/blog-2.jpg" alt="what cars are most vulnerable" loading="lazy" class="w-100">
+                                    </a>
+
+                                    <a href="#" class="btn card-badge">Repair</a>
+
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">
+                                        <a href="#">What cars are most vulnerable</a>
+                                    </h3>
+
+                                    <div class="card-meta">
+
+                                        <div class="publish-date">
+                                            <ion-icon name="time-outline"></ion-icon>
+
+                                            <time datetime="23-01-2022">23 Janvier, 2022</time>
+                                        </div>
+
+                                        <div class="comments">
+                                            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                                            <data value="254">254</data>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="blog-card">
+
+                                <figure class="card-banner">
+
+                                    <a href="#">
+                                        <img src="assets/images/blog-3.jpg" alt="statistics showed which average age" loading="lazy" class="w-100">
+                                    </a>
+
+                                    <a href="#" class="btn card-badge">Cars</a>
+
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Statistics showed which average age</a>
+                                    </h3>
+
+                                    <div class="card-meta">
+
+                                        <div class="publish-date">
+                                            <ion-icon name="time-outline"></ion-icon>
+
+                                            <time datetime="29-01-2022">29 Janvier, 2022</time>
+                                        </div>
+
+                                        <div class="comments">
+                                            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                                            <data value="69">69</data>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="blog-card">
+
+                                <figure class="card-banner">
+
+                                    <a href="#">
+                                        <img src="assets/images/blog-5.jpg" alt="What's required when renting a car?" loading="lazy" class="w-100">
+                                    </a>
+
+                                    <a href="#" class="btn card-badge">Company</a>
+
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">
+                                        <a href="#">What's required when renting a car?</a>
+                                    </h3>
+
+                                    <div class="card-meta">
+
+                                        <div class="publish-date">
+                                            <ion-icon name="time-outline"></ion-icon>
+
+                                            <time datetime="12-02-2022">12 Février, 2022</time>
+                                        </div>
+
+                                        <div class="comments">
+                                            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                                            <data value="112">112</data>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="blog-card">
+
+                                <figure class="card-banner">
+
+                                    <a href="#">
+                                        <img src="assets/images/blog-4.jpg" alt="New rules for handling our cars" loading="lazy" class="w-100">
+                                    </a>
+
+                                    <a href="#" class="btn card-badge">Company</a>
+
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">
+                                        <a href="#">New rules for handling our cars</a>
+                                    </h3>
+
+                                    <div class="card-meta">
+
+                                        <div class="publish-date">
+                                            <ion-icon name="time-outline"></ion-icon>
+
+                                            <time datetime="12-02-2022">12 Février, 2022</time>
+                                        </div>
+
+                                        <div class="comments">
+                                            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                                            <data value="112">112</data>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        
+                    </ul>
+
+                </div>
+            </section>
+
+
+        </article>
+    </main>
+    
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-top">
+
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo.svg" alt="logo">
+                    </a>
+
+                    <p class="footer-text">
+                        Search for cheap rental cars in New York ?
+                    </p>
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Company</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Notre histoire</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Conditions de paiements</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Notre blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Contact</a>
+                    </li>
+
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Support</p>
+                    </li>
+                    
+                    <li>
+                        <a href="#" class="footer-link">Aide</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Pose nous une question</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Mentions légales</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">C.G.V</a>
+                    </li>
+
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Paris, Ile de france</p>
+                    </li>
+                    
+                    <li>
+                        <a href="#" class="footer-link">Marseille, Aix-en-provence</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Lille</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Biarritz</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Bordeaux</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+            
+            <div class="footer-bottom">
+
+                <ul class="social-list">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <p class="copyright">
+                    &copy; 2022 Rodolphe. All Rights Reserved
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+    <script src="script.js"></script>
+    <!--IONICON-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
